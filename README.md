@@ -7,7 +7,7 @@ A mini full-stack dashboard built for the **GrowthProAI Full Stack Intern Assign
 
 | Client (Frontend) | Server (Backend) |
 |-------------------|------------------|
-| [🌐 Frontend on Vercel]( https://mini-dashboard-one.vercel.app/) | [🌐 Backend on Render]( https://seo-dashboard-api.onrender.com ) |
+| [🌐 Frontend on Vercel]( https://mini-dashboard-one.vercel.app/) | [🌐 Backend on Render](https://seo-minidashboard-api.onrender.com/) |
 
 >
 
