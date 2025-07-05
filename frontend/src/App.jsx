@@ -10,7 +10,7 @@ function App() {
   const fetchBusinessData = async (name, location) => {
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/business-data", {
+      const res = await axios.post(`${API_BASE}/business-data`, {
         name,
         location,
       });
@@ -26,8 +26,9 @@ function App() {
     setLoading(true); // also show loader during headline regeneration
     try {
       const res = await axios.get(
-        `http://localhost:5000/regenerate-headline?name=${businessData.name}&location=${businessData.location}`
+        `${API_BASE}/regenerate-headline?name=${businessData.name}&location=${businessData.location}`
       );
+
       setBusinessData((prev) => ({ ...prev, headline: res.data.headline }));
     } catch (error) {
       alert("Failed to regenerate headline.");
