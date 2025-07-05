@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "./components/Form";
 import DisplayCard from "./components/DisplayCard";
 import axios from "axios";
+const API_BASE = import.meta.env.VITE_API_BASE;
 
 function App() {
   const [businessData, setBusinessData] = useState(null);
